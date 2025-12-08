@@ -1,22 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: delete-task
+  name: deletetask-api
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: delete-task
+      app: deletetask-api
   template:
     metadata:
       labels:
-        app: delete-task
+        app: deletetask-api
     spec:
       containers:
-      - name: delete-task
-        env:
-          - name: CONNECTION_STRING
-            value: "Driver={ODBC Driver 17 for SQL Server};Server=tcp:devopsinsiderssrv.database.windows.net,1433;Database=todoapp;Uid=devopsadmin;Pwd=P@ssw01rd@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
-        image: devopsinsiders/delete-task
+      - name: deletetask-api
+        image: <Image>
         ports:
-        - containerPort: 8000
+        - containerPort: 
