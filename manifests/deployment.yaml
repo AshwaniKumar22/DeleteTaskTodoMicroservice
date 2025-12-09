@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: deletetask-api
-        image: todoappacr2213.azurecr.io/deletetask:v1
+        image: todoappacr2213.azurecr.io/deletetask:v2
         ports:
         - containerPort: 8000
         env:
