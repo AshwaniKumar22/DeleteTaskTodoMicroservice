@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: deletetask-api-svc
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: deletetask-api
   ports:
