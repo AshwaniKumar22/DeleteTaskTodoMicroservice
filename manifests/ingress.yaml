@@ -1,9 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: todo-ui-ingress
+  name: deletetask-ingress
   labels:
-    app.kubernetes.io/name: todo-ui-ingress
+    app.kubernetes.io/name: deletetask-ingress
 spec:
   ingressClassName: nginx
   rules:
